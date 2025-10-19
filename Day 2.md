@@ -54,3 +54,8 @@ f(l,r){
     f(l+1,r-1);
 }
 ```
+
+
+Q.3 Palindrome check
+
+**Problem Statement:** Given a integer x, return true if it is a palindrome, or false otherwise.

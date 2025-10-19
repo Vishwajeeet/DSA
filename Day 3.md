@@ -1,6 +1,7 @@
 # Day 3: Recursion
 
 Q.1. Sum of n natural nos. using recursion 
+
 **Approach** 
 
 ```
@@ -33,6 +34,7 @@ f(n){
 }
 ```
 Q.2. Factorial of a number using recursion
+
 **Approach**
 ```
 f(n){
@@ -42,4 +44,45 @@ f(n){
     })
     return n * f(n-1);
 }
+```
+
+Q.2. Reverse a string using recursion using 1 pointer
+
+**Approach**
+
+```
+f(i){
+    if(i>=arr.size()/2){
+        return;
+    }
+    swap(arr[i], arr[n-i-1]);
+    f(i+1);
+}
+main(){
+    arr,
+    f(0);
+}
+```
+
+Q.3 Palindrome Check
+
+**Problem Statement:** Given a integer x, check if it is a palindrome using recursion.
+
+**Approach**
+
+```
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if (x<0) return false;
+
+        string s = to_string(x);
+        return checkifPalindrome(s, 0 , s.size()-1);
+    }
+    bool checkifPalindrome(string &s, int left, int right){
+        if(left >= right) return true;
+        if (s[left] != s[right]) return false;
+        return checkifPalindrome(s, left+1 , right-1);
+    }
+};
 ```
