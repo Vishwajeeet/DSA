@@ -44,3 +44,13 @@ public:
 ```
 **Time Complexity** : O(n) 
 **Space Complexity**  : O(n) (recursion stack space)
+
+```
+f(l,r){
+    if(l>=r) return;
+
+    swap(s[l],s[r]);
+
+    f(l+1,r-1);
+}
+```
