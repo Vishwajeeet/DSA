@@ -1,3 +1,5 @@
+# Day 3: Recursion
+
 Q.1. Sum of n natural nos. using recursion 
 **Approach** 
 
